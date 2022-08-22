@@ -20,7 +20,8 @@ ONT_RNA_processing/scripts/stringtie_quantification.sh
 ONT_RNA_processing/scripts/bambu.R
 ONT_RNA_processing/scripts/bambu.sh
 
-Bambu
+_Bambu_
+
 bam.list contains all the bam files from /data/groups/group_3/alignments/ont_bams_genome folder.
 direct_cdna_samples contains all directcDNA files
 fa.file is the genome fasta file Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.
