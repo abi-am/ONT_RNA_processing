@@ -1,6 +1,6 @@
 This is OMICSS 2022 Nanopore RNA-seq data analysis project.
 
-![pipeline](pipeline.png)
+![pipeline](Pipeline.png)
 
 PROCESSING STEPS
 
