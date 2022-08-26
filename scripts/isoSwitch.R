@@ -82,6 +82,7 @@ extractSplicingEnrichment(
   returnResult = FALSE # if TRUE returns a data.frame with the summary statistics
 )
 
+#Volcano-like plot
 ggplot(data=ont_switches_with_consequences$isoformFeatures, aes(x=dIF, y=-log10(isoform_switch_q_value))) +
   geom_point(
     aes( color=abs(dIF) > 0.1 & isoform_switch_q_value < 0.05 ), # default cutoff
