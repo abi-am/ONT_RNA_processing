@@ -16,7 +16,7 @@ ONT_RNA_processing/scripts/genome_alignment.sh
 ONT_RNA_processing/scripts/transcriptome_alignment.sh
 
 3. Isoform Expression Analysis
-For isoform expression analysis we tried to compare 2 tools - StringTie and Bambu.
+For isoform expression analysis we tried to compare 2 tools - StringTie together with IsoformSwitchAnalyzeR and Bambu.
 
 ONT_RNA_processing/scripts/stringtie_quantification.sh
 ONT_RNA_processing/scripts/bambu.R
@@ -31,3 +31,19 @@ gtf.file is the gtf fole Homo_sapiens.GRCh38.91.gtf.
 prepareAnnotations method takes gtf.file as an input and stores the output CompressedGRangesList file in bambuAnnotations variable. 
 For bambu method has direct_cdna_samples, bambuAnnotations and fa.file are given as an input to run in 10 threads and its output is saved in se variable.
 The output is saved in se.RData file. 
+
+_StringTie2_
+
+StringTie2 assembles RNA-Seq alignments into transcripts. It can assmeble ling reads and also gives us proper output for continuing work with IsoformSwitchAnalyzeR. 
+
+ONT_RNA_processing/scripts/stringtie_quantification.sh 
+
+_IsoformSwitchAnalyzeR_
+
+IsoformSwitchAnalyzeR works perfectly with input imported from StringTie2. We proceeded with this tutorial
+
+https://bioconductor.org/packages/release/bioc/vignettes/IsoformSwitchAnalyzeR/inst/doc/IsoformSwitchAnalyzeR.html#advice-for-running-external-sequence-analysis-tools-and-downloading-results
+
+ONT_RNA_processing/scripts/isoSwitch.R 
+
+
