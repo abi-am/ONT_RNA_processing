@@ -46,4 +46,5 @@ https://bioconductor.org/packages/release/bioc/vignettes/IsoformSwitchAnalyzeR/i
 
 ONT_RNA_processing/scripts/isoSwitch.R 
 
+Via this script we detected and visualized isoform switches. For the part 2 we did some external analysis with tools that are described in the tutorial above. 
 
